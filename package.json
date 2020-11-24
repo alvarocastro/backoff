@@ -10,8 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/alvarocastro/backoff.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
-    "backoff"
+    "backoff",
+    "delay"
   ],
   "author": "Alvaro Castro",
   "license": "MIT",
