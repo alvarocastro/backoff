@@ -7,12 +7,12 @@ const Backoff = function (options = {}) {
 };
 
 Backoff.prototype.duration = function () {
-	let time = this.min * Math.pow(this.factor, this.attempts);
+	let time = this.min * (this.factor ** this.attempts);
 
 	this.attempts++;
 	if (this.jitter) {
 		const deviation = Math.round(Math.random() * this.jitter * this.min * 2);
-		time += this.jitter * this.min - deviation;
+		time += (this.jitter * this.min) - deviation;
 	}
 
 	return Math.floor(Math.min(time, this.max));

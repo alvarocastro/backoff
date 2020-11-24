@@ -64,7 +64,7 @@ test('Should support configurable jitter', t => {
 		jitter: 0.5
 	});
 	let d;
-	
+
 	d = b.duration();
 	t.assert(d >= 500 && d <= 1500);
 	d = b.duration();

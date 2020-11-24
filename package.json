@@ -4,8 +4,7 @@
   "description": "Simple implementation of a backoff utility",
   "main": "index.js",
   "scripts": {
-    "testd": "xo && nyc ava",
-    "test": "nyc ava"
+    "test": "xo && nyc ava"
   },
   "repository": {
     "type": "git",
